@@ -1,7 +1,8 @@
-package com.vacuum.roost
+package com.vacuum.roost.ui.main
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.vacuum.roost.R
 
 class MainActivity : AppCompatActivity() {
 
