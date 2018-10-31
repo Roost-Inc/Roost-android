@@ -13,7 +13,11 @@ import com.vacuum.roost.ui.main.MainActivity
 
 class SplashActivity : AppCompatActivity(),SplashMvpView {
 
-
+    companion object {
+        fun getStartIntent(context: Context): Intent {
+            return Intent(context, SplashActivity::class.java)
+        }
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
@@ -21,9 +25,6 @@ class SplashActivity : AppCompatActivity(),SplashMvpView {
 
     }
 
-    fun getStartIntent(context: Context): Intent {
-        return Intent(context, SplashActivity::class.java)
-    }
 
 
     override fun openLoginActivity() {
@@ -34,4 +35,7 @@ class SplashActivity : AppCompatActivity(),SplashMvpView {
         startActivity(intent)
         finish()
     }
+
+
+
 }
